@@ -13,9 +13,8 @@ def now_serving(katz_deli)
 end
 
 def line(katz_deli)
-  if katz_deli.each.with_index do |value, index| katz_deli.length + 1 > 0
+  if katz_deli.each.with_index {|value, index| katz_deli.length + 1 > 0}
       puts "The line is currently: #{index + 1}. #{value}"
-    end
   else
     puts "The line is currently empty."
   end
