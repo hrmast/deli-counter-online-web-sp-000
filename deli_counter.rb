@@ -15,11 +15,10 @@ end
 def line(katz_deli)
   list = []
   katz_deli.each.with_index do |value, index| list << ("#{index + 1}. #{value}")
-      puts "The line is currently: #{index + 1}. #{value}"
   end
 
   if katz_deli.length > 0
-    puts "The line is currently: #{katz_deli.join()}."
+    puts "The line is currently: #{list}."
   else
     puts "The line is currently empty."
   end
