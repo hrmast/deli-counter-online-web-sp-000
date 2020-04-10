@@ -18,7 +18,7 @@ def line(katz_deli)
   end
 
   if katz_deli.length > 0
-    puts "The line is currently: #{list}."
+    puts "The line is currently: #{list.join(",")}."
   else
     puts "The line is currently empty."
   end
