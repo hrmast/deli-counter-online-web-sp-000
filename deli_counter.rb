@@ -13,8 +13,8 @@ def now_serving(katz_deli)
 end
 
 def line(katz_deli)
-  katz_deli.each_with_index do |value, index|
-      puts "The line is currently: #{index + 1}. #{value}"
+  katz_deli.each.with_index do |value, index|
+      puts "The line is currently: #{index}. #{value}"
   end
 
   if katz_deli.length > 0
