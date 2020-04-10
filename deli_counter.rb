@@ -14,7 +14,7 @@ end
 
 def line(katz_deli)
   list = []
-  katz_deli.each.with_index do |value, index| list << ("#{index + 1}. #{value}")
+  katz_deli.each_with_index do |value, index| list << ("#{index + 1}. #{value}")
   end
 
   if katz_deli.length > 0
